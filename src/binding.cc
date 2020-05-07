@@ -250,7 +250,7 @@ NAN_METHOD(ReadPointer) {
 
   int64_t offset = GetInt64(info[1]);
   char *ptr = Buffer::Data(buf.As<Object>()) + offset;
-  size_t size = info[2]->Uint32Value(v8::Isolate::GetCurrent()->GetCurrentContext()).ToChecked();
+  size_t size = info[2]->Uint32Value(v8::Isolate::GetCurrent();
 
   if (ptr == NULL) {
     return Nan::ThrowError("readPointer: Cannot read from NULL pointer");
