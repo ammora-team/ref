@@ -1,5 +1,5 @@
 {
-  "name": "ref",
+  "name": "@ammora/ref",
   "description": "Turn Buffer instances into \"pointers\"",
   "keywords": [
     "native",
@@ -17,7 +17,7 @@
     "byte",
     "64"
   ],
-  "version": "2.0.0",
+  "version": "2.1.0",
   "license": "MIT",
   "author": "Nathan Rajlich <nathan@tootallnate.net> (http://tootallnate.net)",
   "repository": {
@@ -30,9 +30,12 @@
     "test": "mocha --gc-global --expose-gc --reporter spec --use_strict"
   },
   "dependencies": {
-    "bindings": "1",
+    "bindings": "^1.5.0",
     "debug": "*",
-    "nan": "2"
+    "nan": "^2.14.1"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "dox": "0.9.0",
